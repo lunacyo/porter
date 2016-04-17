@@ -702,6 +702,7 @@ a{
     background-color: lightgray;
     font-size: 25px;
     text-align: center;
+    font-family: 'hanna', serif;
 }
 
 #foot a:hover{
