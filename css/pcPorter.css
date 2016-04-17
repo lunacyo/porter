@@ -1,0 +1,1129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+    모든 브라우저 기본 CSS형식 리셋!
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr{
+    border-bottom: 0px;
+    border: 1px solid lightgray;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.displays{
+    display: none;
+}
+#pageHeader{
+    box-sizing: border-box;
+    width: 100%;
+    height:70px;
+}
+#pageHeader .leftArea{
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    width: 15%;
+    height:70px;
+    left: 0;
+}
+#pageHeader .headermidArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:70px;
+    left:15%;
+    top: 0;
+}
+#pageHeader .rightArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 15%;
+    height: 70px;
+    top: 0;
+    right: 0;
+}
+.searchArea{
+    width: 30%;
+    box-sizing: border-box;
+    height:70px;
+    position: relative;
+    left: 0;
+}
+.search{
+    position: relative;
+    top: 20px;
+    padding-right: 10px;
+    height: 70px;
+    float: left;
+}
+.logoArea{
+    width: 40%;
+    box-sizing: border-box;
+    height:70px;
+    position: absolute;
+    left: 30%;
+    top: 0;
+}
+.logo{
+    width: 100%;
+    height:70px;
+}
+.accountArea{
+    width: 30%;
+    height: 70px;
+    box-sizing: border-box;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.myAccount li{
+    position: relative;
+    top:20px;
+    padding-right: 10px;
+    height: 70px;
+    float: right;
+    
+}
+#menuBar{
+    width: 100%;
+    height:40px;
+    text-align: center;
+}
+#menuBar .leftArea{
+    position: relative;
+    box-sizing: border-box;
+    width: 15%;
+    height:40px;
+    left: 0;
+}
+#menuBar .mainArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:40px;
+    left:15%;
+    top: 8.5%;
+    padding-bottom:40px;
+    border-bottom: 10px solid black;
+}
+#menuBar .rightArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 15%;
+    height: 40px;
+    top:8.5%;
+    right: 0;
+}
+#menuBar .mainList{
+    position:relative;
+    float:right;
+    left:-50%;
+    padding-bottom: 10px;
+    
+}
+#menuBar .mainList>li{
+    position: relative;
+    float:left;
+    left: 50%;
+    margin: 18px;
+}
+#menuBar .mainListfont1{
+    font-size:13px;
+    color: darkviolet;
+    cursor:pointer;
+    font-family: 'hanna',serif;
+}
+#menuBar .mainListfont{
+    font-size:13px;
+    color: black;
+    cursor:pointer;
+    font-family: 'hanna', serif;
+}
+
+.mainList ul li a:hover{
+    color:darkkhaki;
+}
+#menuBar .mainListfont:hover{
+    color:darkgreen;
+}
+
+.new{
+    display:none;
+    position: absolute;
+    top:20px;
+    left: 0;
+    border: 2px solid gray;
+    width:570px;
+    height:330px;
+    z-index: 30;
+    font-size: 20px;
+    font-family: 'hanna', serif;
+    background-color:white;
+    text-align:left;
+    -webkit-animation-name:bot;
+    -webkit-animation-duration:1s;
+    animation-name: bot;
+    animation-duration: 1s;
+}
+.subImg{
+    width: 330px;
+    height: 330px;
+    position:relative;
+    float: right;
+    top:-160px;
+    box-sizing: border-box;
+}
+.new img{
+    width: 330px;
+    height: 330px;
+}
+.mainList_subMenu{
+    display:none;
+    position: absolute;
+    top:20px;
+    left: -140px;
+    height: 330px;
+    border: 2px solid gray;
+    width:570px;
+    z-index: 30;
+    font-size: 20px;
+    font-family: 'hanna', serif;
+    background-color:white;
+    text-align:left;
+    -webkit-animation-name:bot;
+    -webkit-animation-duration:1s;
+    animation-name: bot;
+    animation-duration: 1s;
+}
+.mainList_subMenu figure{
+    width: 330px;
+    height: 330px;
+    position:relative;
+    float: right;
+    top:-160px;
+    box-sizing: border-box;
+}
+.mainList_subMenu img{
+    width: 330px;
+    height: 330px;
+}
+.mainList li:hover .new{
+    display: block;
+    
+}
+@-webkit-keyframes bot{
+    from{top: 0px;}
+    to{top:20px;}
+}
+@keyframes bot{
+    from{top: 0px;}
+    to{top:20px;}
+}
+#main{
+    width: 100%;
+    height: 2400px;
+    position: relative;
+    -webkit-animation-name:myLeft;
+    -webkit-animation-duration:3s;
+    animation-name: myLeft;
+    animation-duration: 3s;
+}
+@-webkit-keyframes myLeft{
+    from{left:400px;}
+    to{left:0px;}
+}
+@keyframes myLeft{
+    from{left: 400px;}
+    to{left:0px;}
+}
+#main .leftArea{
+    position: relative;
+    box-sizing: border-box;
+    width: 15%;
+    height:2400px;
+    left: 0;
+}
+#main .rightArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 15%;
+    height:2400px;
+    top:8.5%;
+    right: 0;
+    top: 0;
+}
+#main .mainArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:2400px;
+    left:15%;
+    top:0;
+}
+#subMain{
+    width: 100%;
+    height: 1160px;
+    position: relative;
+    -webkit-animation-name:myLeft;
+    -webkit-animation-duration:3s;
+    animation-name: myLeft;
+    animation-duration: 3s;
+}
+@-webkit-keyframes myLeft{
+    from{left:400px;}
+    to{left:0px;}
+}
+@keyframes myLeft{
+    from{left: 400px;}
+    to{left:0px;}
+}
+#subMain .leftArea{
+    position: relative;
+    box-sizing: border-box;
+    width: 15%;
+    height:1160px;
+    left: 0;
+}
+#subMain .rightArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 15%;
+    height:1160px;
+    top:8.5%;
+    right: 0;
+    top: 0;
+}
+#subMain .mainArea{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:1160px;
+    left:15%;
+    top:0;
+}
+
+#main .image1{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:1.5%;
+}
+
+#main .image1 figure{
+    box-sizing: border-box;
+    width: 33.3%;
+    height:105px;
+    float: left;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.image1 img{
+    position: relative;
+}
+
+#main .image1 figcaption{
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+    margin-left:95px;
+    font-family: 'hanna', serif;
+}
+#main .image1 figcaption:hover{
+    color: darkkhaki;
+}
+
+.pick{
+    height: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'hanna', serif;
+    text-align: center;
+}
+#main .mainImage{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:650px;
+    left:15%;
+    top:6.5%;
+}
+#main .mainImg img{
+    width: 100%;
+    max-width:100%;
+    height:650px;
+    -webkit-animation-name:fade;
+    -webkit-animation-duration:5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes fade{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+#main .journal{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:28%;
+    text-align: center;
+}
+.journal a:hover{
+    color: darkkhaki;
+}
+.journal a>p{
+    font-size: 20px;
+    padding: 8px; 
+    font-family: 'hanna',serif;
+}
+.journal a>h2{
+    font-size: 40px;
+    padding: 8px;
+    font-family: 'hanna', serif;
+}
+.journal a> h3{
+    font-size: 20px;
+    font-family: 'hanna', serif;
+}
+#main .bestItem{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:35%;
+}
+#main .bestItem figure{
+    box-sizing: border-box;
+    width:29%;
+    height: auto;
+    float: left;
+}
+#main a .bestSe{
+    margin-right: 63px;
+    margin-left: 63px;
+}
+#main .bestItem figcaption{
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid gray;
+    font-family: 'hanna', serif;
+}
+#main .bestItem a:hover{
+    color: darkkhaki;
+}
+#main .bestItem img{
+    width:100%;
+    height:200px;
+}
+#bestItem2{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:45.5%;
+}
+#bestItem2 .bt1{
+    box-sizing: border-box;
+    width:49%;
+    height: auto;
+    float: left;
+    
+}
+#bestItem2 .bt2{
+    box-sizing: border-box;
+    width:49%;
+    height: auto;
+    float: right;
+    
+}
+#bestItem2 figcaption{
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid gray;
+    font-family: 'hanna', serif;
+}
+#bestItem2 .bt1:hover,.bt2:hover{
+    color: darkkhaki;
+}
+#bestItem2 img{
+    width:100%;
+    height:300px;
+}
+.bestItem3{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:60.5%;
+}
+.bestItem3 a:hover{
+    color: darkkhaki;
+}
+.bestItem3 figure{
+    box-sizing: border-box;
+    width: 70%;
+    float: right;
+}
+.bestItem3 div{
+    background-color: #FFFAF6;
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+    text-align: center;
+    height: 307px;
+    font-family: 'hanna', serif;
+}
+.bestItem3 div>h2{
+    font-size: 140px;
+    font-family: 'hanna', serif;
+}
+.bestItem3 div>p{
+    font: 40px;
+    font-family: 'hanna', serif;
+}
+.bestItem3 img{
+    width: 100%;
+    height:307px;
+}
+#main .express{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:74%;
+}
+
+#main .express figure{
+    box-sizing: border-box;
+    background-color:#F0F0F0;
+    width: 33.3%;
+    height:105px;
+    float: left;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.express img{
+    position: relative;
+    top:20%;
+    left: 10%;
+}
+
+#main .express figcaption{
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    top: 24%;
+    margin-left:110px;
+    font-family: 'hanna', serif;
+}
+#main .express figcaption:hover{
+    color: darkkhaki;
+}
+.expressMid{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+#main .mostPopular{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    top:79%;
+    overflow: hidden;
+}
+#main .popularWrap{
+    box-sizing: border-box;
+    width:5000px;
+    height:160px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+}
+.pick1{
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'hanna', serif;
+}
+.mostPopular figure{
+    box-sizing: border-box;
+    float: left;
+    margin-left: 26px;
+    margin-right: 26px;
+    width: 110px;
+    height: 110px;
+}
+.mostPopular img{
+    box-sizing: border-box;
+    width:110px;
+    height:110px;
+}
+.mostPopular figcaption{
+    width: 110px;
+    height: auto;
+    text-align:center;
+    font-size: 13px;
+    font-family: 'hanna', serif;
+}
+.mostPopular figure>a:hover{
+    color: darkkhaki;
+}
+.mpLeft{
+    position: absolute;
+    left:14%;
+    bottom:18%;
+    
+}
+.mpRight{
+    position: absolute;
+    right: 14%;
+    bottom:18%;
+   
+}
+#main .video{
+    position: absolute;
+    box-sizing: border-box;
+    width: 70%;
+    height:auto;
+    left:15%;
+    bottom:1%;
+}
+#main .video a figure{
+    box-sizing: border-box;
+    width:29%;
+    height: auto;
+    float: left;
+}
+#main a.bestSe{
+    margin-left: 50px;
+    margin-right: 49px;
+}
+#main .video figcaption{
+    font-size: 17px;
+    text-align: center;
+    border: 1px solid gray;
+    font-family: 'hanna', serif;
+}
+#main .video a:hover{
+    color: darkkhaki;
+}
+#main .video img{
+    width:100%;
+    height:200px;
+}
+#foot{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    position:relative;
+    float:right;
+    left:-50%;
+    font-family: 'hanna', serif;
+    
+}
+.footBg{
+    height: 150px;
+    background-color: lightgray;
+}
+#foot section{
+    float: left;
+    margin-right:30px;
+    margin-left: 120px;
+    text-align: left;
+    position: relative;
+    float:left;
+    left: 50%;
+}
+.copy{
+    background-color: lightgray;
+    font-size: 25px;
+    text-align: center;
+}
+
+#foot a:hover{
+    color: darkgreen;
+}
+.trandMain1{
+    width: 100%;
+    height: 500px;
+    position:relative;
+    
+}
+
+.trandMain1 figcaption{
+    position: absolute;
+    font-size: 30px;
+    bottom:0;
+    color:mediumvioletred;
+    font-family: 'hanna', serif;
+}
+.t1{
+    width: 25%;
+    height: 50%;
+    position: relative;
+    opacity: 0.6;
+}
+.t1:hover{
+    opacity: 1;
+}
+.t1 img{
+    width: 100%;
+    height:250px;
+}
+.t2{
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top:0;
+    left:25%;
+    box-sizing: border-box;
+    opacity: 0.6;
+}
+.t2:hover{
+    opacity: 1;
+}
+.t2 img{
+    width: 100%;
+    height:250px;
+}
+.t3{
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    position: relative;
+    opacity: 0.6;
+}
+.t3:hover{
+    opacity: 1;
+}
+.t3 img{
+    width: 100%;
+    height: 250px;
+}
+.t4{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    opacity: 0.6;
+}
+.t4:hover{
+    opacity: 1;
+}
+.t4 img{
+    width: 100%;
+    height: 500px;
+}
+
+.trandMain2{
+    width: 100%;
+    height: 570px;
+    position:relative;
+}
+.trandMain2 figcaption{
+    position: absolute;
+    font-size: 30px;
+    bottom:0;
+    color:mediumvioletred;
+    font-family: 'hanna', serif;
+}
+.t5{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    opacity: 0.6;
+}
+.t5:hover{
+    opacity: 1;
+}
+.t5 img{
+    width: 100%;
+    height: 570px;
+}
+.t6{
+    box-sizing: border-box;
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0.6;
+}
+.t6:hover{
+    opacity: 1;
+}
+.t6 img{
+    width: 100%;
+    height: 285px;
+}
+.t7{
+    box-sizing: border-box;
+    width:25%;
+    height: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    opacity: 0.6;
+}
+.t7:hover{
+    opacity: 1;
+}
+.t7 img{
+    width: 100%;
+    height: 285px;
+}
+.t8{
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.6;
+}
+.t8:hover{
+    opacity: 1;
+}
+.t8 img{
+    width: 100%;
+    height: 570px;
+}
+.sideMenu{
+    box-sizing: border-box;
+    position:absolute;
+    top: 5%;
+    width: 20%;
+    height: auto;
+}
+.sideMenu>ul>li{
+    color:slategray;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'hanna', serif;
+}
+.slideSub i{
+    font-size: 16px;
+}
+.slideSub li{
+    font-size: 14px;
+    font-family: 'hanna', serif;
+}
+.slideSub a:hover{
+    color: darkkhaki;
+}
+.itMain{
+    box-sizing: border-box;
+    position: absolute;
+    top:5%;
+    left: 23%;
+    width: 80%;
+    height: 1095px;
+    
+}
+.itLogo{
+    width: 80%;
+    height: 200px;
+    position: relative;
+}
+.itLogo2{
+    box-sizing: border-box;
+    width: 40%;
+    height: 200px;
+    position: relative;
+}
+.itLogo3{
+    box-sizing: border-box;
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+}
+.itLogo img{
+    width: 100%;
+    height: 200px;
+}
+.itLogo2 img{
+    width: 100%;
+    height: 200px;
+}
+.itLogo3 img{
+    width: 100%;
+    height: 200px;
+}
+.it1{
+    position: relative;
+    top:0;
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    margin: 20px;
+    
+}
+.it1 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+    
+}
+.it1 figcaption{
+    text-align: center;
+}
+.it1 figcaption a:hover{
+    color: darkkhaki;
+}
+.it1 img{
+    width: 100%;
+    height: 250px;
+}
+.it2{
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    position: absolute;
+    top: 19.5%;
+    left: 27%;
+    margin: 20px;
+}
+.it2 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it2 figcaption{
+    text-align: center;
+}
+.it2 figcaption a:hover{
+    color: darkkhaki;
+}
+.it2 img{
+    width: 100%;
+    height: 250px;
+}
+.it3{
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    position: absolute;
+    top: 19.5%;
+    left: 54%;
+    margin: 20px;
+}
+.it3 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it3 figcaption{
+    text-align: center;
+}
+.it3 figcaption a:hover{
+    color: darkkhaki;
+}
+.it3 img{
+    width: 100%;
+    height: 250px;
+}
+.it4{
+    box-sizing: border-box;
+    width:25%;
+    height: 250px;
+    margin: 20px;
+    position: relative;
+    top: 16px;
+}
+.it4 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it4 figcaption{
+    text-align: center;
+}
+.it4 figcaption a:hover{
+    color: darkkhaki;
+}
+.it4 img{
+    width: 100%;
+    height: 250px;
+}
+.it5{
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    margin: 20px;
+    position: absolute;
+    top: 45.5%;
+    left: 27%;
+}
+.it5 figcaption{
+    text-align: center;
+}
+.it5 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it5 figcaption a:hover{
+    color: darkkhaki;
+}
+.it5 img{
+    width: 100%;
+    height: 250px;
+}
+.it6{
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    margin: 20px;
+    position: absolute;
+    top: 45.5%;
+    left: 54%;
+}
+.it6 figcaption{
+    text-align: center;
+}
+.it6 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it6 figcaption a:hover{
+    color: darkkhaki;
+}
+.it6 img{
+    width: 100%;
+    height: 250px;
+}
+.it7{
+    box-sizing: border-box;
+    width:25%;
+    height: 250px;
+    margin: 20px;
+    position: relative;
+    top: 32px;
+}
+.it7 figcaption{
+    text-align: center;
+}
+.it7 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it7 figcaption a:hover{
+    color: darkkhaki;
+}
+.it7 img{
+    width: 100%;
+    height: 250px;
+}
+.it8{
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    margin: 20px;
+    position: absolute;
+    top: 71.5%;
+    left: 27%;
+}
+.it8 figcaption{
+    text-align: center;
+}
+.it8 figcaption a{
+    font-size: 12px; 
+    font-family: 'hanna', serif;
+}
+.it8 figcaption a:hover{
+    color: darkkhaki;
+}
+.it8 img{
+    width: 100%;
+    height: 250px;
+}
+.it9{
+    box-sizing: border-box;
+    width: 25%;
+    height: 250px;
+    margin: 20px;
+    position: absolute;
+    top: 71.5%;
+    left: 54%;
+}
+.it9 figcaption{
+    text-align: center;
+}
+.it9 figcaption a{
+    font-size: 12px;
+    font-family: 'hanna', serif;
+}
+.it9 figcaption a:hover{
+    color: darkkhaki;
+}
+.it9 img{
+    width: 100%;
+    height: 250px;
+}
+.mobileNav{
+    display: none;
+}
