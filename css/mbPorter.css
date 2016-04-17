@@ -716,8 +716,8 @@ a{
 .copy{
     padding: 100px;
     background-color: lightgray;
-    font-size: 18px;
-    text-align: center;
+    font-size: 13px;
+    text-align:left;
 }
 
 #foot a:hover{
