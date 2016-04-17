@@ -658,13 +658,9 @@ a{
 }
 #main .video a figure{
     box-sizing: border-box;
-    width:29%;
+    width:33%;
     height: auto;
     float: left;
-}
-#main a.bestSe{
-    margin-left: 50px;
-    margin-right: 49px;
 }
 #main .video figcaption{
     font-size: 17px;
