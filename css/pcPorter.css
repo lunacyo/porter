@@ -455,11 +455,11 @@ a{
     height: auto;
     float: left;
 }
-#main a .bestSe{
+.bestSe{
     margin-right:1px;
-    margin-left:5px;
+    margin-left:6px;
 }
-#main a .bestTo{
+.bestTo{
     float: right;
 }
 #main .bestItem figcaption{
