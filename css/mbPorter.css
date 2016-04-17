@@ -438,7 +438,7 @@ a{
     width: 70%;
     height:auto;
     left:15%;
-    top:13%;
+    top:11%;
     text-align: center;
 }
 .journal a:hover{
@@ -716,7 +716,7 @@ a{
 .copy{
     padding: 100px;
     background-color: lightgray;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
 }
 
