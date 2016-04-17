@@ -212,7 +212,6 @@ a{
     -webkit-animation-duration:1s;
     animation-name: bot;
     animation-duration: 1s;
-    list-style: none;
 }
 .subImg{
     width: 330px;
