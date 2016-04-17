@@ -456,15 +456,15 @@ a{
     float: left;
 }
 .bestSe{
-    margin-right:1px;
-    margin-left:8px;
+    margin-right:3px;
+    margin-left:6px;
 }
 .bestTo{
     float: right;
 }
 .bestSe2{
-    margin-right:3px;
-    margin-left:6px;
+    margin-right:4px;
+    margin-left:5px;
 }
 #main .bestItem figcaption{
     font-size: 17px;
