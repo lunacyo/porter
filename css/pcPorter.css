@@ -421,7 +421,7 @@ a{
     width: 70%;
     height:auto;
     left:15%;
-    top:28%;
+    top:27%;
     text-align: center;
 }
 .journal a:hover{
@@ -457,7 +457,7 @@ a{
 }
 #main a .bestSe{
     margin-right: 63px;
-    margin-left: 63px;
+    margin-left: 68px;
 }
 #main .bestItem figcaption{
     font-size: 17px;
