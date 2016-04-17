@@ -122,6 +122,7 @@ a{
     position: absolute;
     top: 0;
     right: 0;
+    font-family: 'hanna',serif;
 }
 .myAccount li{
     position: relative;
